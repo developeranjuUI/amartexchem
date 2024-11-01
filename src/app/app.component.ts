@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'amartexchem';
+
+  isSearchHidden = true;
+
+  toggleSearch(): void{
+    this.isSearchHidden = !this.isSearchHidden;
+  }
 }
