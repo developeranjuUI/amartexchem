@@ -1,5 +1,5 @@
 <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar_bg py-0">
         <div class="container">
           <a class="navbar-brand" routerLink="/home">
             <img src="assets/images/company-logo.png" class="img_logo" alt="">
@@ -16,27 +16,32 @@
                 <a class="nav-link" routerLink="aboutus">About Us</a>
               </li>
               <li class="nav-item nav_products">
-                <a class="nav-link" routerLink="products">Products</a>
-                <ul class="nav-inner-item">
-                    <li><a class="nav-link" routerLink="products/zdhcexport-certified">Export Certified</a></li>
-                    <li><a class="nav-link" routerLink="#">Domestic Oriented Products</a>
+                <div (click)="toggleAccordion('products')" class="accordian_mbl">
+                  <a class="nav-link" routerLink="products">Products</a>
+                  <span class="toggle_icon" *ngIf="isMobile">
+                    {{ isOpen['products'] ? '-' : '+'  }}
+                  </span>
+                </div>
+                <ul class="nav-inner-item" [ngClass]="{ 'show': isMobile ? isOpen['products'] : true }">
+                    <li><a class="nav-link nav-innerLink" [routerLink]="['/products/zdhcexport-certified', zdhcProductId]">Export Certified</a></li>
+                    <li><a class="nav-link nav-innerLink" [routerLink]="['/products/domestic-oriented', domesticProductId]">Domestic Oriented Products</a>
                         <ul>
-                            <li><a class="nav-link" routerLink="#">Antistatic Spin Finish</a></li>
-                            <li><a class="nav-link" routerLink="#">Dyeing Auxillaries</a></li>
+                            <li><a class="nav-link nav-innerLink" routerLink="#">Antistatic Spin Finish</a></li>
+                            <li><a class="nav-link nav-innerLink" routerLink="#">Dyeing Auxillaries</a></li>
                         </ul>
                     </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="aboutus">Contact</a>
+                <a class="nav-link" routerLink="contactus">Contact</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <button class="search_btn" (click)="toggleSearch()"><img src="assets/images/search-icon.svg" alt=""></button>
                 <form class="search_form" role="search" [class.hidden]="isSearchHidden">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn" type="submit"><img src="assets/images/search-icon.svg" alt=""></button>
                   </form>
-              </li>
+              </li> -->
             </ul>
 
             <!-- <form class="d-flex" role="search">
@@ -51,17 +56,17 @@
     <router-outlet></router-outlet>
 </div>
 <footer>
-    <div class="footer_banner">
+    <!-- <div class="footer_banner">
         <div class="contact">
             <img src="assets/images/whell-icon.svg" alt="">
             <p>24/7 Customer Support</p>
         </div>
-    </div>
-    <div class="bg-dark py-5">
+    </div> -->
+    <div class="footer_section py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-2 footer-items">
-                    <a routerLink="/home">
+                    <a class="footer_logo" routerLink="/home">
                         <img src="assets/images/company-logo.png" class="img_logo" alt="">
                     </a>
                 </div>

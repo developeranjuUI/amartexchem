@@ -1,51 +1,69 @@
-<div class="hero_section position-relative">
+<section class="hero_section position-relative">
     <picture>
-        <source media="(max-width:560px)" srcset="assets/images/hero-mblbanner.webp" alt="">
-        <source media="(min-width:560px)" srcset="assets/images/hero-banner-1.webp" alt="">
-        <img src="assets/images/hero-banner-1.webp" class="w-100" alt="">
+        <source media="(max-width:560px)" srcset="assets/images/hero-bannermbl.webp" alt="">
+        <source media="(min-width:560px)" srcset="assets/images/banner.webp" alt="">
+        <img src="assets/images/banner.webp" class="w-100" alt="">
     </picture>
-    <div class="hero_title">
+    <!-- <div class="hero_title">
         <div class="hero_heading">
             <span>NEED OF TEXTILE</span>
         </div>
-        <div class="hero_heading_default"><h1>AMAR TEX <br>CHEM</h1></div>
-        <div>
+        <div class="hero_heading_default"><h1>AMAR TEX CHEM</h1></div>
+        <div class="text-white">
             <strong>A NAME WHERE YOU CAN TRUST</strong>
         </div>
+        <a href="javascript:void(0);" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
+    </div> -->
+    <div class="hero_title">
+        <div class="hero_heading_default"><p>Amar Tex Chem is one of the ZDHC-certified chemical manufacturers in India.</p></div>
+        <div>
+            <strong class="text-white">Amar tex chem is one of the leading speciality chemical manufacturer in India.</strong>
+        </div>
+        <a href="javascript:void(0);" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
     </div>
-</div>
-<section class="about_section py-5">
+</section>
+<section class="about_section position-relative py-5">
     <div class="container">
-        <h2 class="sub_heading">About Us</h2>
-        <div class="row">
-            <div class="col-lg-6 about_content">
-                <span class="para_heading">Amar tex chem is one of the leading speciality chemical manufacturer in India.</span>
-                <p>
-                    with over 20 years of experience in the development and manufacturing of high-performance specialty chemicals for various applications, we have innovative as well as green (Eco-frierndly) chemical solutions. We continually develop and market innovative products to optimize and enhance our portfolio, providing intelligent solutions tailored to our customers’ needs.
-                </p>
-                <p>Our goal is to deliver the highest quality products while contributing to resource conservation.</p>
-                <span class="para_heading">Amar Tex Chem is one of the ZDHC-certified chemical manufacturers in India.</span>
+        <div class="section-title position-relative mb-4">
+            <div class="section-subtitle">
+                <h3>About Us</h3>
             </div>
-            <div class="col-lg-6 about_img position-relative">
-                <figure>
-                    <img src="assets/images/about-image-2.jpg" alt="">
-                    <img src="assets/images/about-image-1.webp" alt="">
-                </figure>
+            <h2>About Us</h2>
+        </div>
+        <div class="about_content">
+            <!-- <div>
+                <img src="assets/images/about-image.jpg" alt="">
+            </div> -->
+            <div class="row">
+                <div class="col-lg-6 about_desc" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="about_text"><span>Amar tex chem</span> is one of the leading speciality <span>chemical manufacturer</span> in India.</div>
+                    <p>with over 20 years of experience in the development and manufacturing of high-performance specialty chemicals for various applications, we have innovative as well as green (Eco-frierndly) chemical solutions. We continually develop and market innovative products to optimize and enhance our portfolio, providing intelligent solutions tailored to our customers’ needs.</p>
+                    <p>Our goal is to deliver the highest quality products while contributing to resource conservation.</p>
+                </div>
+                <div class="col-lg-6 about_banner" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="assets/images/about-image-1.webp" class="w-100" alt="">
+                </div>
             </div>
+            <a routerLink="aboutus" class="knowmore_cta">Know More</a>
         </div>
     </div>
 </section>
-<section class="whyus_section py-5">
+<section class="whyus_section position-relative py-5">
     <div class="container">
-        <h2 class="sub_heading">Why Us</h2>
+        <div class="section-title position-relative mb-4">
+            <div class="section-subtitle">
+                <h3>Why Us</h3>
+            </div>
+            <h2>Why Us</h2>
+        </div>
         <div class="row">
-            <div class="col-lg-6">
-                <figure style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);">
-                    <img src="assets/images/Manufacturing-image.jpg" class="w-100" alt="">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+                <figure style="border-radius: 10px;">
+                    <img src="assets/images/Manufacturing-image.jpg" class="w-100 rounded-2" alt="">
                 </figure>
             </div>
-            <div class="col-lg-6 whyus_content">
-                <span class="para_heading">We are manufacturing products with world class quality</span>
+            <div class="col-lg-6 whyus_content" data-aos="fade-up" data-aos-duration="1500">
+                <div class="about_text">We are <span>manufacturing products</span> with <span>world class</span> quality.</div>
                 <p>
                     We are committed to quality, driving innovation and continuous improvement. By enhancing quality, we create better products and services, satisfy customers, stay competitive, and build trust. This focus ensures our sustained success and growth.
                 </p>
@@ -54,43 +72,97 @@
         </div>
     </div>
 </section>
-<section class="whychooseus_section py-5">
+<section class="whychooseus_section position-relative py-5">
     <div class="container">
-        <h2 class="sub_heading text-center">Why Choose Us</h2>
-        <div class="row chooseus_content">
-            <div class="col-lg-4 chooseus_content_start">
-                <div class="mb-2">
-                    <span class="para_heading">ZDHC Certified</span>
-                    <p>Eco friendly chemicals</p>
+        <div class="section-title position-relative text-center mb-4">
+            <div class="section-subtitle title_center">
+                <h3 class="">Why Choose Us</h3>
+            </div>
+            <h2 class="">Why Choose Us</h2>
+        </div>
+        <div class="row chooseus_content align-items-center" >
+            <div class="col-lg-4 chooseus_content_start" data-aos="fade-right" data-aos-duration="1500">
+                <div class="mb-2 chooseus_items">
+                    <div class="row no-wrap flex-row-reverse align-items-center">
+                        <div class="col-3 col-lg-3 flex_img">
+                            <img src="assets/images/eco-friendly.svg" alt="">
+                        </div>
+                        <div class="col text-white">
+                            <span class="items_heading text-white">ZDHC Certified</span>
+                            <p class="text-white">Eco friendly chemicals</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <span class="para_heading">Sustainable Process</span>
-                    <p>we are commited to sustainable practices at every stage of our operations.</p>
+                <div class="mb-2 chooseus_items">
+                    <div class="row no-wrap flex-row-reverse align-items-center">
+                        <div class="col-3 col-lg-3 flex_img">
+                            <img src="assets/images/sustainable.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <span class="items_heading text-white">Sustainable Process</span>
+                            <p class="text-white">we are commited to sustainable practices at every stage of our operations.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <span class="para_heading">Msme Registered</span>
-                    <p>Following Govt. Regulations</p>
+                <div class="mb-2 chooseus_items">
+                    <div class="row no-wrap flex-row-reverse align-items-center">
+                        <div class="col-3 col-lg-3 flex_img">
+                            <img src="assets/images/govt.regulation.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <span class="items_heading text-white">Msme Registered</span>
+                            <p class="text-white">Following Govt. Regulations</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <span class="para_heading">CBDO inJaipur, Ludhiana</span>
-                    <p>For speedy solution to the customer support.</p>
+                <div class="mb-2 chooseus_items">
+                    <div class="row no-wrap flex-row-reverse align-items-center">
+                        <div class="col-3 col-lg-3 flex_img">
+                            <img src="assets/images/support.svg" alt="">
+                        </div>
+                        <div class="col text-white">
+                            <span class="items_heading text-white">CBDO inJaipur, Ludhiana</span>
+                            <p class="text-white">For speedy solution to the customer support.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <img src="assets/images/whychooseus-1.png" class="w-100" alt="">
             </div>
-            <div class="col-lg-4 chooseus_content_last">
-                <div class="mb-2">
-                    <span class="para_heading">Cost Effective</span>
-                    <p>Available at more that 10% price difference.</p>
+            <div class="col-lg-4 chooseus_content_last" data-aos="fade-left" data-aos-duration="1500">
+                <div class="mb-2 chooseus_items">
+                    <div class="row no-wrap align-items-center">
+                        <div class="col-3 col-lg-3 flex_img">
+                            <img src="assets/images/costeffective.svg" alt="">
+                        </div>
+                        <div class="col text-white">
+                            <span class="items_heading text-white">Cost Effective</span>
+                            <p class="text-white">Available at more that 10% price difference.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <span class="para_heading">Tailored Product</span>
-                    <p>We believe in providing tailor made products, as per the requirement for the export & domestic market.</p>
+                <div class="mb-2 chooseus_items">
+                    <div class="row no-wrap align-items-center">
+                        <div class="col-3 col-lg-3 flex_img">
+                            <img src="assets/images/tailoredproduct.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <span class="items_heading text-white">Tailored Product</span>
+                            <p class="text-white">We believe in providing tailor made products, as per the requirement for the export & domestic market.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <span class="para_heading">Stock availability</span>
-                    <p>We have sufficient raw material available to meet demands for over a year.</p>
+                <div class="mb-2 chooseus_items">
+                    <div class="row no-wrap align-items-center">
+                        <div class="col-3 col-lg-3 flex_img">
+                            <img src="assets/images/stock.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <span class="items_heading text-white">Stock availability</span>
+                            <p class="text-white">We have sufficient raw material available to meet demands for over a year.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,8 +170,13 @@
 </section>
 <section class="popular_products py-5">
     <div class="container">
-        <h2 class="sub_heading">Popular Products</h2>
-        <div class="row product_content">
+        <div class="section-title position-relative mb-4">
+            <div class="section-subtitle">
+                <h3>Popular Products</h3>
+            </div>
+            <h2>Popular Products</h2>
+        </div>
+        <div class="row product_content" data-aos="fade-up" data-aos-duration="1500">
             <div class="col-lg-4">
                 <div class="card mb-2">
                     <div class="card-body">
@@ -131,6 +208,35 @@
                 </div>
             </div>
         </div>
-        <div class="explore_btn"><a routerLink="/products" class="text-decoration-underline">Explore More..</a></div>
+        <div class="explore_btn text-center my-4"><a routerLink="/products" class="">Explore More..</a></div>
+    </div>
+</section>
+<section class="contact_form py-5">
+    <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-lg-6 mx-auto">
+                <div class="contact_details">
+                    <form>
+                        <h3 class="sub_heading">Reach Out to us</h3>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="name" placeholder="Enter your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Mobile</label>
+                            <input type="mobile" class="form-control" id="name" placeholder="Enter your Mobile number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="name" placeholder="Enter your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea name="message" id="" class="form-control" placeholder="Type your message"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

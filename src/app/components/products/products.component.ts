@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
+  zdhcProductId: any|string;
+  domesticProductId: any|string;
 
 }
