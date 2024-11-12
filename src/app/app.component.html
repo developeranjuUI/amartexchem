@@ -1,5 +1,5 @@
 <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar_bg py-0">
+    <nav class="navbar navbar-expand-lg navbar_bg py-0 shadow">
         <div class="container">
           <a class="navbar-brand" routerLink="/home">
             <img src="assets/images/company-logo.png" class="img_logo" alt="">
@@ -10,30 +10,36 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
             <ul class="navbar-nav align-items-lg-center ms-lg-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" routerLink="home">Home</a>
+                <a class="nav-link active" aria-current="page" routerLink="home" (click)="closeSidebar()">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="aboutus">About Us</a>
+                <a class="nav-link" routerLink="aboutus" (click)="closeSidebar()">About Us</a>
               </li>
               <li class="nav-item nav_products">
                 <div (click)="toggleAccordion('products')" class="accordian_mbl">
-                  <a class="nav-link" routerLink="products">Products</a>
+                  <a class="nav-link" routerLink="products" (click)="closeSidebar()">Products</a>
                   <span class="toggle_icon" *ngIf="isMobile">
                     {{ isOpen['products'] ? '-' : '+'  }}
                   </span>
                 </div>
                 <ul class="nav-inner-item" [ngClass]="{ 'show': isMobile ? isOpen['products'] : true }">
-                    <li><a class="nav-link nav-innerLink" [routerLink]="['/products/zdhcexport-certified', zdhcProductId]">Export Certified</a></li>
-                    <li><a class="nav-link nav-innerLink" [routerLink]="['/products/domestic-oriented', domesticProductId]">Domestic Oriented Products</a>
-                        <ul>
-                            <li><a class="nav-link nav-innerLink" routerLink="#">Antistatic Spin Finish</a></li>
-                            <li><a class="nav-link nav-innerLink" routerLink="#">Dyeing Auxillaries</a></li>
+                    <li><a class="nav-link nav-innerLink" [routerLink]="['/products/zdhcexport-certified', zdhcProductId]" (click)="closeSidebar()">Export Certified</a></li>
+                    <li>
+                        <div (click)="toggleAccordion('products_inner')" class="accordian_mbl">
+                          <a class="nav-link nav-innerLink" [routerLink]="['/products/domestic-oriented', domesticProductId]" (click)="closeSidebar()">Domestic Oriented Products</a>
+                          <span class="toggle_icon" *ngIf="isMobile">
+                            {{ isOpen['products_inner'] ? '-' : '+'  }}
+                          </span>
+                        </div>
+                        <ul class="nav_subitems" [ngClass]="{ 'show': isMobile ? isOpen['products_inner'] : true }">
+                            <li><a class="nav-link nav-innerLink" [routerLink]="['/products/antistatic-agents', antisticProductId]" (click)="closeSidebar()">Antistatic Spin Finish</a></li>
+                            <li><a class="nav-link nav-innerLink" [routerLink]="['/products/dyeing-auxillaries', dyeingProductId]" (click)="closeSidebar()">Dyeing Auxillaries</a></li>
                         </ul>
                     </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="contactus">Contact</a>
+                <a class="nav-link" routerLink="contactus" (click)="closeSidebar()">Contact</a>
               </li>
               <!-- <li class="nav-item">
                 <button class="search_btn" (click)="toggleSearch()"><img src="assets/images/search-icon.svg" alt=""></button>

@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class ProductsComponent {
   zdhcProductId: any|string;
   domesticProductId: any|string;
+  antisticProductId: any|string = '';
+  dyeingProductId: any|string = '';
 
 }

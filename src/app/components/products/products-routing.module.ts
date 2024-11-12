@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './products.component';
 import { ZdhcexportCertifiedComponent } from './zdhcexport-certified/zdhcexport-certified.component';
 import { DomesticOrientedComponent } from './domestic-oriented/domestic-oriented.component';
+import { AntistaticAgentsComponent } from './antistatic-agents/antistatic-agents.component';
+import { DyeingAuxillariesComponent } from './dyeing-auxillaries/dyeing-auxillaries.component';
 
 const routes: Routes = [
   {
@@ -15,6 +17,14 @@ const routes: Routes = [
   {
     path: 'domestic-oriented/:domesticProductId', // Path for DomesticOrientedComponent
     component: DomesticOrientedComponent
+  },
+  {
+    path: 'antistatic-agents/:antisticProductId', // Path for AntistaticAgentsComponent
+    component: AntistaticAgentsComponent
+  },
+  {
+    path: 'dyeing-auxillaries/:dyeingProductId', // Path for DyeingAuxillariesComponent
+    component: DyeingAuxillariesComponent
   }
 ];
 

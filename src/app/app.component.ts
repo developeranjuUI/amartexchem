@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { NavigationEnd, Router, Event } from '@angular/router';
 import * as AOS from 'aos';
+declare var bootstrap: any; // declare for bootstrap's javascript api
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,11 @@ export class AppComponent implements OnInit {
   aos: any;
   zdhcProductId: any|string;
   domesticProductId: any|string;
+  antisticProductId: any|string = '';
+  dyeingProductId: any|string = '';
   isOpen: { [key: string]: boolean } = {};
   isMobile: boolean = false;
+  offcanvasElement: any;
 
   constructor(private router: Router) {}
   
@@ -30,6 +34,14 @@ export class AppComponent implements OnInit {
     this.checkScreenSize();
 
     AOS.init({disable: 'mobile'});
+    
+    this.offcanvasElement = document.getElementById('offcanvasRight');
+    const offcanvas = new bootstrap.Offcanvas(this.offcanvasElement);
+    this.router.events.subscribe((event) => {
+      if(event instanceof NavigationEnd) {
+        offcanvas.hide();
+      }
+    })
   }
   toggleSearch(): void{
     this.isSearchHidden = !this.isSearchHidden;
@@ -57,5 +69,10 @@ export class AppComponent implements OnInit {
     if (this.isMobile) {
       this.isOpen[section] = !this.isOpen[section];
     }
+  }
+
+  closeSidebar() {
+    const offcanvas = new bootstrap.offcanvas(this.offcanvasElement);
+    offcanvas.hide();
   }
 }
