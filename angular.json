@@ -14,6 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/amartexchem",
+            "baseHref": "https://developeranju.github.io/amartexchem/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
