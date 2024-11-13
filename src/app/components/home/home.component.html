@@ -1,9 +1,9 @@
-<section class="hero_section position-relative">
-    <picture>
+<section class="hero_section">
+    <!-- <picture>
         <source media="(max-width:560px)" srcset="assets/images/hero-bannermbl.webp" alt="">
         <source media="(min-width:560px)" srcset="assets/images/banner.webp" alt="">
         <img src="assets/images/banner.webp" class="w-100" alt="">
-    </picture>
+    </picture> -->
     <!-- <div class="hero_title">
         <div class="hero_heading">
             <span>NEED OF TEXTILE</span>
@@ -14,13 +14,46 @@
         </div>
         <a href="javascript:void(0);" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
     </div> -->
-    <div class="hero_title">
+    <!-- <div class="hero_title">
         <div class="hero_heading_default"><p>Amar Tex Chem is one of the ZDHC-certified chemical manufacturers in India.</p></div>
         <div>
             <strong class="text-white">Amar tex chem is one of the leading speciality chemical manufacturer in India.</strong>
         </div>
         <a routerLink="aboutus" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
-    </div>
+    </div> -->
+    <div class="slick-container">
+        <ngx-slick-carousel class="carousel mb-0" [config]="slideConfig">
+          <div ngxSlickItem class="slide position-relative">
+            <picture>
+              <source media="(max-width:560px)" srcset="assets/images/hero-bannermbl.webp" />
+              <source media="(min-width:560px)" srcset="assets/images/banner.webp" />
+              <img src="assets/images/banner.webp" class="w-100" alt="Slide Image" />
+            </picture>
+            <div class="hero_title">
+                <div class="hero_heading_default"><p>Amar Tex Chem is one of the ZDHC-certified chemical manufacturers in India.</p></div>
+                <div>
+                    <strong class="text-white">Amar tex chem is one of the leading speciality chemical manufacturer in India.</strong>
+                </div>
+                <a routerLink="aboutus" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
+            </div>
+          </div>
+          <div ngxSlickItem class="slide slide_2 position-relative">
+            <picture>
+              <source media="(max-width:560px)" srcset="assets/images/hero-bannermbl-01.webp" />
+              <source media="(min-width:560px)" srcset="assets/images/hero-banner-01.webp" />
+              <img src="assets/images/hero-banner-01.webp" class="w-100" alt="Slide Image" />
+            </picture>
+            <div class="hero_title">
+                <div class="hero_heading_default"><p class="text-dark fw-bold">Over 20 years of experience in the <br>development and manufacturing of high-performance specialty chemicals.</p></div>
+                <div>
+                    <strong class="text-dark">Amar tex chem is one of the leading speciality chemical manufacturer in India.</strong>
+                </div>
+                <a routerLink="aboutus" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+      
 </section>
 <section class="about_section position-relative py-5">
     <div class="container">

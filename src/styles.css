@@ -458,6 +458,25 @@ section:nth-child(odd),.background_bg{
 .btn-success,.btn-success:hover{
     background-color: #618c00 !important;
 }
+/* slick css */
+.hero_section .slick-dots li.slick-active button:before{
+    color: #618c00;
+    font-size: 12px;
+}
+.hero_section .slick-dots{
+    bottom: 10px;
+}
+.hero_section .slick-dots li button:before{
+    color: #fff;
+    opacity: 1;
+}
+.hero_section .slick-dots li button,
+.hero_section .slick-dots li button:before{
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+}
+/* slick css ends */
 @media (min-width: 991px){
     /* .nav-inner-item,.nav-inner-item li:hover:nth-of-type(2) ul{
         border-top: 2px solid #be2509;
@@ -499,6 +518,9 @@ section:nth-child(odd),.background_bg{
         left: 20px;
         bottom: calc(100% - 5px);
         z-index: -1;
+    }
+    .slide_2 .hero_title{
+        left: 34%;
     }
 }
 @media (max-width: 990px){
@@ -593,5 +615,8 @@ section:nth-child(odd),.background_bg{
     }
     .flex_content p{
         font-size: 16px;
+    }
+    .slide_2 picture{
+        opacity: 0.9;
     }
 }
