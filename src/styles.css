@@ -666,4 +666,10 @@ section:nth-child(odd),.background_bg{
     .hero_section .slick-next:before{
         display: none;
     }
+    .export_info{
+        padding-top: 20px;
+    }
+    .navbar .navbar-toggler:focus{
+        box-shadow: none;
+    }
 }
