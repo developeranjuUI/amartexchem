@@ -339,8 +339,6 @@ section:nth-child(odd),.background_bg{
     font-family: "Montserrat", sans-serif;
 }
 .footer-items ul li{
-    color: #fff;
-    font-size: 18px;
     text-align: start;
     font-family: "Montserrat", sans-serif;
     border-bottom: 1px dotted #fff;
@@ -348,6 +346,10 @@ section:nth-child(odd),.background_bg{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+.footer-items ul li a{
+    color: #fff;
+    font-size: 18px;
 }
 .footer-items .img_logo{
     width: 130px;
