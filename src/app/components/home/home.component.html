@@ -34,7 +34,7 @@
                 <div>
                     <strong class="text-white">Amar tex chem is one of the leading speciality chemical manufacturer in India.</strong>
                 </div>
-                <a routerLink="aboutus" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
+                <a routerLink="/aboutus" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
             </div>
           </div>
           <div ngxSlickItem class="slide slide_2 position-relative">
@@ -44,14 +44,14 @@
               <img src="assets/images/hero-banner-01.webp" class="w-100" alt="Slide Image" />
             </picture>
             <div class="hero_title">
-                <div class="hero_heading_default"><p class="text-dark fw-bold">Over 20 years of experience in the <br>development and manufacturing of high-performance specialty chemicals.</p></div>
+                <div class="hero_heading_default"><p class="text-dark fw-bold">Over 20 years of experience in the development and manufacturing of high-performance specialty chemicals.</p></div>
                 <div>
                     <strong class="text-dark">Amar tex chem is one of the leading speciality chemical manufacturer in India.</strong>
                 </div>
-                <a routerLink="aboutus" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
+                <a routerLink="/aboutus" class="btn btn-light knowmore_btn mt-4"><strong>Know More</strong></a>
             </div>
           </div>
-        </ngx-slick-carousel>
+        </ngx-slick-carousel>         
       </div>
       
 </section>
@@ -79,7 +79,7 @@
                     <img src="assets/images/about-image-1.webp" class="rounded-2 w-100" alt="">
                 </div>
             </div>
-            <a routerLink="aboutus" class="knowmore_cta">Know More</a>
+            <a routerLink="/aboutus" class="knowmore_cta">Know More</a>
         </div>
     </div>
 </section>
@@ -123,7 +123,7 @@
                 <div class="mb-2 chooseus_items">
                     <div class="row no-wrap flex-row-reverse align-items-center">
                         <div class="col-3 col-lg-3 flex_img">
-                            <img src="assets/images/eco-friendly.svg" alt="">
+                            <span><img src="assets/images/zhdc-certified.svg" alt=""></span>
                         </div>
                         <div class="col flex_content">
                             <span class="items_heading text-white">ZDHC Certified</span>
@@ -134,7 +134,7 @@
                 <div class="mb-2 chooseus_items">
                     <div class="row no-wrap flex-row-reverse align-items-center">
                         <div class="col-3 col-lg-3 flex_img">
-                            <img src="assets/images/sustainable.svg" alt="">
+                            <span><img src="assets/images/sustainable.svg" alt=""></span>
                         </div>
                         <div class="col flex_content">
                             <span class="items_heading text-white">Sustainable Process</span>
@@ -145,7 +145,7 @@
                 <div class="mb-2 chooseus_items">
                     <div class="row no-wrap flex-row-reverse align-items-center">
                         <div class="col-3 col-lg-3 flex_img">
-                            <img src="assets/images/govt.regulation.jpg" alt="">
+                            <span><img src="assets/images/msme.svg" alt=""></span>
                         </div>
                         <div class="col flex_content">
                             <span class="items_heading text-white">Msme Registered</span>
@@ -156,7 +156,7 @@
                 <div class="mb-2 chooseus_items">
                     <div class="row no-wrap flex-row-reverse align-items-center">
                         <div class="col-3 col-lg-3 flex_img">
-                            <img src="assets/images/support.svg" alt="">
+                            <span><img src="assets/images/support.svg" alt=""></span>
                         </div>
                         <div class="col flex_content">
                             <span class="items_heading text-white">CBDO inJaipur, Ludhiana</span>
@@ -173,7 +173,7 @@
                 <div class="mb-2 chooseus_items">
                     <div class="row no-wrap align-items-center">
                         <div class="col-3 col-lg-3 flex_img">
-                            <img src="assets/images/costeffective.svg" alt="">
+                            <span><img src="assets/images/costeffective.svg" alt=""></span>
                         </div>
                         <div class="col flex_content">
                             <span class="items_heading text-white">Cost Effective</span>
@@ -184,7 +184,7 @@
                 <div class="mb-2 chooseus_items">
                     <div class="row no-wrap align-items-center">
                         <div class="col-3 col-lg-3 flex_img">
-                            <img src="assets/images/tailoredproduct.svg" alt="">
+                            <span><img src="assets/images/tailoredproduct.svg" alt=""></span>
                         </div>
                         <div class="col flex_content">
                             <span class="items_heading text-white">Tailored Product</span>
@@ -195,7 +195,7 @@
                 <div class="mb-2 chooseus_items">
                     <div class="row no-wrap align-items-center">
                         <div class="col-3 col-lg-3 flex_img">
-                            <img src="assets/images/stock.svg" alt="">
+                            <span><img src="assets/images/stock.svg" alt=""></span>
                         </div>
                         <div class="col flex_content">
                             <span class="items_heading text-white">Stock availability</span>
@@ -275,6 +275,7 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea name="message" id="" class="form-control" placeholder="Type your message"></textarea>
                         </div>
+                        <div class="text-center"><button class="btn btn-success">Submit</button></div>
                     </form>
                 </div>
             </div>

@@ -28,6 +28,24 @@ a{
 /* .navigation_items ul{
     display
 } */
+.submit-btn.btn-primary{
+    font-size: 18px;
+    padding:6px 25px;
+}
+.submit-btn.btn-primary,
+.submit-btn.btn-primary:hover,
+.submit-btn.btn-primary:focus{
+    background-color: #136b8f ;
+    border-color: #136b8f;
+}
+.submit-btn.btn-primary:first-child:active{
+    background-color: #136b8f ;
+    border-color: #136b8f;
+}
+/* .contact_info .form-control:focus{
+    box-shadow: none;
+    border-color: #dee2e6;
+} */
 .navbar_bg{
     background-color: transparent;
  }
@@ -269,7 +287,7 @@ section:nth-child(odd),.background_bg{
     border-radius: 300px 30px 300px 300px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
-.chooseus_items .flex_img img{
+.chooseus_items .flex_img span{
     border-style: solid;
     border-width: 3px 3px 3px 3px;
     border-color: #ECECEC;
@@ -282,6 +300,11 @@ section:nth-child(odd),.background_bg{
     box-shadow: none;
     background: #fff;
     padding: 10px;
+    display: block;
+}
+.chooseus_items .flex_img img{
+    height: auto;
+    max-width: 100%;
 }
 .explore_btn a::before {
     content: '';
@@ -434,6 +457,7 @@ section:nth-child(odd),.background_bg{
 } */
 .contact_form{
     background: url('assets/images/contact_bg.webp') no-repeat;
+    background-size: cover;
 }
 .contact_details{
     background-color: rgb(186 186 186 / 86%);
@@ -461,7 +485,13 @@ section:nth-child(odd),.background_bg{
 /* slick css */
 .hero_section .slick-dots li.slick-active button:before{
     color: #618c00;
-    font-size: 12px;
+    font-size: 15px;
+}
+.hero_section .slick-dots li button, 
+.hero_section .slick-dots li button:before{
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
 }
 .hero_section .slick-dots{
     bottom: 10px;
@@ -475,6 +505,17 @@ section:nth-child(odd),.background_bg{
     width: 30px;
     height: 30px;
     font-size: 12px;
+}
+.hero_section .slick-prev{
+    left: 10px;
+    z-index: 10;
+}
+.hero_section .slick-next{
+    right: 30px;
+}
+.hero_section .slick-prev:before,
+.hero_section .slick-next:before{
+    font-size: 40px;
 }
 /* slick css ends */
 @media (min-width: 991px){
@@ -618,5 +659,9 @@ section:nth-child(odd),.background_bg{
     }
     .slide_2 picture{
         opacity: 0.9;
+    }
+    .hero_section .slick-prev:before,
+    .hero_section .slick-next:before{
+        display: none;
     }
 }
