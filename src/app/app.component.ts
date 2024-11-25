@@ -71,8 +71,8 @@ export class AppComponent implements OnInit {
     }
   }
 
-  closeSidebar() {
-    const offcanvas = new bootstrap.offcanvas(this.offcanvasElement);
-    offcanvas.hide();
-  }
+  // closeSidebar() {
+  //   const offcanvas = new bootstrap.offcanvas(this.offcanvasElement);
+  //   offcanvas.hide();
+  // }
 }

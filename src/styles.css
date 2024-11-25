@@ -28,7 +28,8 @@ a{
 /* .navigation_items ul{
     display
 } */
-.submit-btn.btn-primary{
+.submit-btn.btn-primary,
+.submit_success.btn-success{
     font-size: 18px;
     padding:6px 25px;
 }
@@ -116,6 +117,10 @@ a{
 }
 .img_logo{
     width: 90px;
+}
+.navbar-expand-lg .navbar-nav li a.nav-link:hover,
+.navbar-expand-lg .navbar-nav li a.nav-link.active{
+    color: #618c00;
 }
 /* navigation styling ends */
 /* homepage styling */
@@ -252,6 +257,9 @@ a{
     background-position: bottom center;
     bottom: 0;
     z-index: -1;
+}
+.whychooseus_section{
+    padding-bottom: 9rem;
 }
 section:nth-child(odd),.background_bg{
     background-color: #fbede4;
@@ -478,7 +486,7 @@ section:nth-child(odd),.background_bg{
     font-weight: 600;
     letter-spacing: normal;
 }
-.domestic_main ul{
+.domestic_main ul,.export_main ul,.antistic_main ul{
     list-style-type: disc;
 }
 .btn-success,.btn-success:hover{
@@ -520,6 +528,9 @@ section:nth-child(odd),.background_bg{
     font-size: 40px;
 }
 /* slick css ends */
+.mailtext a{
+    color:#133949;
+}
 @media (min-width: 991px){
     /* .nav-inner-item,.nav-inner-item li:hover:nth-of-type(2) ul{
         border-top: 2px solid #be2509;
@@ -606,6 +617,9 @@ section:nth-child(odd),.background_bg{
     }
 }
 @media (max-width: 540px){
+    .whychooseus_section{
+        padding-bottom: 5rem;
+    }
     .section-title h2{
         font-size: 34px;
     }
