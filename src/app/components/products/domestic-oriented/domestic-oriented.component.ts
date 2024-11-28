@@ -7,13 +7,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./domestic-oriented.component.css']
 })
 export class DomesticOrientedComponent implements OnInit {
-  domesticProductId: string|null = '';
+  // domesticProductId: string|null = '';
   
   constructor (private route: ActivatedRoute){}
   
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
-      this.domesticProductId = params.get('domesticProductId');
-    })
+    // this.route.paramMap.subscribe(params => {
+    //   this.domesticProductId = params.get('domesticProductId');
+    // })
   }
 }

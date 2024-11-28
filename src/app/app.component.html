@@ -23,17 +23,17 @@
                   </span>
                 </div>
                 <ul class="nav-inner-item" [ngClass]="{ 'show': isMobile ? isOpen['products'] : true }">
-                    <li><a class="nav-link nav-innerLink" [routerLink]="['/products/zdhcexport-certified', zdhcProductId]">Export Certified</a></li>
+                    <li><a class="nav-link nav-innerLink" [routerLink]="['/products/zdhcexport-certified']">Export Certified</a></li>
                     <li>
                         <div (click)="toggleAccordion('products_inner')" class="accordian_mbl">
-                          <a class="nav-link nav-innerLink" [routerLink]="['/products/domestic-oriented', domesticProductId]">Domestic Oriented Products</a>
+                          <a class="nav-link nav-innerLink" [routerLink]="['/products/domestic-oriented']">Domestic Oriented Products</a>
                           <span class="toggle_icon" *ngIf="isMobile">
                             {{ isOpen['products_inner'] ? '-' : '+'  }}
                           </span>
                         </div>
                         <ul class="nav_subitems" [ngClass]="{ 'show': isMobile ? isOpen['products_inner'] : true }">
-                            <li><a class="nav-link nav-innerLink" [routerLink]="['/products/antistatic-agents', antisticProductId]">Antistatic Spin Finish</a></li>
-                            <li><a class="nav-link nav-innerLink" [routerLink]="['/products/dyeing-auxillaries', dyeingProductId]">Dyeing Auxillaries</a></li>
+                            <li><a class="nav-link nav-innerLink" [routerLink]="['/products/antistatic-agents']">Antistatic Spin Finish</a></li>
+                            <li><a class="nav-link nav-innerLink" [routerLink]="['/products/dyeing-auxillaries']">Dyeing Auxillaries</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -86,10 +86,10 @@
                 <div class="col-lg-4 footer-items">
                     <h4>Products</h4>
                     <ul>
-                        <li><a routerLink="/products/zdhcexport-certified/undefined">Export Certified</a></li>
-                        <li><a routerLink="/products/domestic-oriented/undefined">Domestic Oriented Products</a></li>
-                        <li><a routerLink="/products/antistatic-agents/undefined">Antistatic Spin Finish</a></li>
-                        <li><a routerLink="/products/dyeing-auxillaries/undefined">Dyeing Auxillaries</a></li>
+                        <li><a [routerLink]="['/products/zdhcexport-certified']">Export Certified</a></li>
+                        <li><a [routerLink]="['/products/domestic-oriented']">Domestic Oriented Products</a></li>
+                        <li><a [routerLink]="['/products/antistatic-agents']">Antistatic Spin Finish</a></li>
+                        <li><a [routerLink]="['/products/dyeing-auxillaries']">Dyeing Auxillaries</a></li>
                     </ul>
                 </div>
             </div>

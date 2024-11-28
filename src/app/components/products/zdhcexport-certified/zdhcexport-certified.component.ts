@@ -7,13 +7,15 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./zdhcexport-certified.component.css']
 })
 export class ZdhcexportCertifiedComponent implements OnInit {
-  zdhcProductId: string|null = '';
+  // zdhcProductId = 'export-certified';
 
   constructor (private route: ActivatedRoute){}
   
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
-      this.zdhcProductId = params.get('zdhcProductId');
-    })
+    // this.route.paramMap.subscribe(params => {
+      // this.zdhcProductId = params.get('zdhcProductId');
+      // this.zdhcProductId = 'export-certified';
+      // console.log('Route parameter zdhcProductId:', this.zdhcProductId);
+    // })
   }
 }

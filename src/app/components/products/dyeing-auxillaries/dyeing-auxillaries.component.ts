@@ -7,14 +7,14 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./dyeing-auxillaries.component.css']
 })
 export class DyeingAuxillariesComponent implements OnInit {
-  dyeingProductId: string|null = '';
+  // dyeingProductId: string|null = '';
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
-      this.dyeingProductId = params.get('dyeingProductId');
-    })
+    // this.route.paramMap.subscribe(params => {
+    //   this.dyeingProductId = params.get('dyeingProductId');
+    // })
   }
 
 }

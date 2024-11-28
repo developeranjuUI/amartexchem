@@ -11,19 +11,23 @@ const routes: Routes = [
     path: '', component: ProductsComponent
   },
   {
-    path: 'zdhcexport-certified/:zdhcProductId', // Path for ZdhcexportCertifiedComponent
+    // path: 'zdhcexport-certified/:zdhcProductId',
+    path: 'zdhcexport-certified', // Path for ZdhcexportCertifiedComponent
     component: ZdhcexportCertifiedComponent
   },
   {
-    path: 'domestic-oriented/:domesticProductId', // Path for DomesticOrientedComponent
+    // path: 'domestic-oriented/:domesticProductId',
+    path: 'domestic-oriented', // Path for DomesticOrientedComponent
     component: DomesticOrientedComponent
   },
   {
-    path: 'antistatic-agents/:antisticProductId', // Path for AntistaticAgentsComponent
+    // path: 'antistatic-agents/:antisticProductId',
+    path: 'antistatic-agents', // Path for AntistaticAgentsComponent
     component: AntistaticAgentsComponent
   },
   {
-    path: 'dyeing-auxillaries/:dyeingProductId', // Path for DyeingAuxillariesComponent
+    // path: 'dyeing-auxillaries/:dyeingProductId', // use when calling dynamic
+    path: 'dyeing-auxillaries', // Path for DyeingAuxillariesComponent
     component: DyeingAuxillariesComponent
   }
 ];

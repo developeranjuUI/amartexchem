@@ -7,14 +7,14 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./antistatic-agents.component.css']
 })
 export class AntistaticAgentsComponent implements OnInit {
-  antisticProductId: string|null = '';
+  // antisticProductId: string|null = '';
 
   constructor (private route: ActivatedRoute){}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
-      this.antisticProductId = params.get('antisticProductId');
-    })
+    // this.route.paramMap.subscribe(params => {
+    //   this.antisticProductId = params.get('antisticProductId');
+    // })
   }
 
 }
