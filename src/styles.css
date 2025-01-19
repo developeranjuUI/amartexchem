@@ -429,6 +429,13 @@ section:nth-child(odd),.background_bg{
     position: absolute;
     display: block;
 }
+.product_card .card_hover:hover .para_heading,
+.product_card .card_hover:hover,
+.product_card .card_hover:hover span,
+.product_card .card_hover:hover p{
+    background-color: #41849f;
+    color: #fff;
+}
 .product_content .card-body:hover .product_details,
 .product_card .card-body:hover .card-details{
     opacity: 1;
