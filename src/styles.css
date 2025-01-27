@@ -231,6 +231,9 @@ a{
     position: relative;
     font-size: 18px;
 }
+.explore_btn a{
+    font-size: 18px;
+}
 .knowmore_cta::after {
     content: '';
     position: absolute;
@@ -314,7 +317,7 @@ section:nth-child(odd),.background_bg{
     height: auto;
     max-width: 100%;
 }
-.explore_btn a::before {
+.common_btn a::before {
     content: '';
     position: absolute;
     height: 1px;
@@ -325,7 +328,7 @@ section:nth-child(odd),.background_bg{
     top: 10px;
     left: -118px;
 }
-.explore_btn a::after{
+.common_btn a::after{
     content: '';
     position: absolute;
     height: 1px;
