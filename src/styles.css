@@ -630,6 +630,9 @@ section:nth-child(odd),.background_bg{
     .flex_content p{
         font-size: 25px;
     }
+    .product_card .card_hover a{
+        flex-direction: column;
+    }
 }
 @media (max-width: 540px){
     .whychooseus_section{
