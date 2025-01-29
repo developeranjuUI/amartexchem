@@ -546,6 +546,11 @@ section:nth-child(odd),.background_bg{
 .mailtext a{
     color:#133949;
 }
+.pdf-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @media (min-width: 991px){
     /* .nav-inner-item,.nav-inner-item li:hover:nth-of-type(2) ul{
         border-top: 2px solid #be2509;
