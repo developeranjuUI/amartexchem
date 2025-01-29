@@ -8,6 +8,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { CertificationsComponent } from './components/certifications/certifications.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     ProductsComponent,
     AboutusComponent,
     ContactusComponent,
+    CertificationsComponent,
   ],
   imports: [
     BrowserModule,
