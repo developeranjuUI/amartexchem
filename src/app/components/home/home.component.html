@@ -281,25 +281,48 @@
         <div class="row">
             <div class="col-lg-6 mx-auto" data-aos="fade-up" data-aos-duration="1500">
                 <div class="contact_details">
-                    <form>
+                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                         <h3 class="sub_heading">Reach Out to us</h3>
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="email" class="form-control" id="name" placeholder="Enter your Name">
+                            <input type="email" class="form-control" id="name" placeholder="Enter your Name" formControlName="name">
+                            <div class="text-danger mt-1" *ngIf="contactForm?.get('name')?.invalid && contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['required']">
+                                Name is required.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="mobile" class="form-label">Mobile</label>
-                            <input type="mobile" class="form-control" id="name" placeholder="Enter your Mobile number">
+                            <input type="mobile" class="form-control" id="name" placeholder="Enter your Mobile number" formControlName="mobile" inputmode="numeric" (input)="onMobileInput($event)">
+                            <div class="text-danger mt-1" *ngIf="contactForm?.get('mobile')?.invalid && contactForm.get('mobile')?.touched && contactForm.get('mobile')?.errors?.['required']">
+                                Mobile number is required.
+                                
+                            </div>
+                            <div class="text-danger mt-1" *ngIf="!contactForm.get('mobile')?.errors?.['required'] && contactForm.get('mobile')?.errors?.['pattern']">
+                                Mobile number must start with 7, 8, or 9 and must have 10 digits.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="name" placeholder="Enter your Email">
+                            <input type="email" class="form-control" id="name" placeholder="Enter your Email" formControlName="email">
+                            <div class="text-danger mt-1" *ngIf="contactForm?.get('email')?.invalid && contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['required']">
+                                Email is required.
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea name="message" id="" class="form-control" placeholder="Type your message"></textarea>
+                            <textarea name="message" id="" class="form-control" placeholder="Type your message" formControlName="message"></textarea>
+                            <div class="text-danger mt-1" *ngIf="contactForm?.get('message')?.invalid && contactForm.get('message')?.touched">
+                                Message is required. Message must be 255 characters or less.
+                            </div>
                         </div>
-                        <div class="text-center"><button class="btn btn-success submit_success border-0">Submit</button></div>
+                        <!-- success message -->
+                        <!-- <div *ngIf="successMessage" class="success-message mb-3">
+                            {{ successMessage }}
+                        </div>
+                        <div *ngIf="errorMessage" class="error-message text-danger mb-3">
+                            {{ errorMessage }}
+                        </div> -->
+                        <div class="text-center"><button class="btn btn-success submit_success border-0" type="submit">Submit</button></div>
                     </form>
                 </div>
             </div>
