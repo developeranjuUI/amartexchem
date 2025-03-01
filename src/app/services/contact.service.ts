@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ContactService {
-  private apiUrl = 'http://localhost/php-script.php'; // have to add php script path
+  private apiUrl = '/send_mail.php'; // have to add php script path
 
   constructor(private http: HttpClient) { }
 
